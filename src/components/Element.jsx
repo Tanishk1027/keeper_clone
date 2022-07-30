@@ -21,21 +21,21 @@ export default function Element(){
         setnotes([...notes,newNote])
     }
 
+    const fetchnotes = ()=>{
+        console.log(user);
+        const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
+                user
+            });
+            console.log(res.data);
+            setnotes(res.data);
+    }
+
     useEffect(()=>{
-        console.log("b");
-        const fetchnotes = ()=>{
-            try{
-                const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
-                    user
-                });
-                console.log(res.data);
-                setnotes(res.data);
-            }catch(error){
-                console.log(error);
-            }
-           
-        }
-        fetchnotes();  
+        try{
+        fetchnotes();
+        }catch(error){
+            console.log(error);
+        }  
     },[search])
     
 
