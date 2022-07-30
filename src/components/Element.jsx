@@ -24,7 +24,7 @@ export default function Element(){
     useEffect(()=>{
         
         const fetchnotes = ()=>{
-           const res =  axios.post("/note/all",{
+           const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
                 user
             });
             console.log(res.data);
