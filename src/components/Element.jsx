@@ -23,8 +23,8 @@ export default function Element(){
 
     useEffect(()=>{
         
-        const fetchnotes = async()=>{
-           const res = await axios.post("/note/all",{
+        const fetchnotes = ()=>{
+           const res =  axios.post("/note/all",{
                 user
             });
             console.log(res.data);
