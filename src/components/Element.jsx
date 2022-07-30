@@ -22,13 +22,18 @@ export default function Element(){
     }
 
     useEffect(()=>{
-        console.log("a");
+        console.log("b");
         const fetchnotes = ()=>{
-           const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
-                user
-            });
-            console.log(res.data);
-            setnotes(res.data);
+            try{
+                const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
+                    user
+                });
+                console.log(res.data);
+                setnotes(res.data);
+            }catch(error){
+                console.log(error);
+            }
+           
         }
         fetchnotes();  
     },[search])
