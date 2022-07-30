@@ -25,8 +25,14 @@ export default function Element(){
         console.log(user);
         const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
                 user
-            });
-            console.log(res.data);
+            })
+            .then((response)=>{
+                console.log(response);
+            })
+            .catch(()=>{
+                console.log("Error");
+            })
+            
             setnotes(res.data);
     }
 
