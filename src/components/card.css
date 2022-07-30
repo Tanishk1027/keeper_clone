@@ -1,0 +1,30 @@
+.card{
+    height: 150px;
+   width: 300px;
+   background-color: white;
+   margin-top: 20px;
+   margin-left: 20px;
+   border: 1px #aaa;
+   box-shadow: 5px 5px 5px 5px #aaa;
+   /* background-color: aqua; */
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+.info{
+    margin-top: 10px;
+    background-color: aqua;
+    margin-left: 10px;
+    width: 250px;
+    height: 20px;
+}
+
+.button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 240px;
+    color: red;
+    font-size: 15px;
+}

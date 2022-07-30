@@ -1,0 +1,40 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://img.freepik.com/free-photo/flat-lay-travel-composition-with-world-map-wooden-background_169016-16173.jpg?w=2000");
+    background-size: cover;
+    height: 100vh;
+}
+
+.registerBox{
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+#headingregister{
+    color: white;
+    /* background-color: aqua; */
+}
+
+#registerButton{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: wheat;
+    /* outline: none; */
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+#registerButton:hover{
+    background-color: green;
+    
+}
+
