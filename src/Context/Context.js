@@ -1,7 +1,6 @@
 import React ,{useReducer,useEffect,createContext} from 'react';
 import reducer from './reducer';
 
-import loginContext from './usecontext';
 const initial_state = {
   user: JSON.parse(localStorage.getItem("user"))||null
 }
