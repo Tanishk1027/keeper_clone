@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./register.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Register(){
      const [username,setUser] = useState("");
@@ -36,6 +37,12 @@ export default function Register(){
             <input type="password"  placeholder="Password" className="registerBox" onChange={e=>{setPassword(e.target.value)}}/>
             <br />
             <button id="registerButton" onClick={handleSubmit}>Register</button>
+            <br />
+            <h2 id="headingLoginregister">Already a user</h2>
+            <br />
+            <button id="loginButtonregister">
+               <Link to="/login"><Login></Login></Link>
+            </button>
         </div>
     )
 }

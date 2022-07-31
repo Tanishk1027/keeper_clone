@@ -37,5 +37,24 @@
     background-color: green;
 }
 
+#registerButtonlogin{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    /* outline: none; */
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+#registerButtonlogin:hover{
+   color: brown;
+}
+
+#headingRegisterlogin{
+    color: aqua;
+}
+
 
 

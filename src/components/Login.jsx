@@ -3,6 +3,7 @@ import React,{ useState,useContext,useRef} from "react";
 import "./login.css";
 // import Topbar from "./Topbar";
 import loginContext from "../Context/usecontext";
+import { Link } from "react-router-dom";
 
 
 export default function Login(){
@@ -38,7 +39,12 @@ export default function Login(){
             <input type="password"  placeholder="Password" className="loginBox" onChange={(e)=>{setPassword(e.target.value)}}/>
             <br />
             <button id="loginButton" onClick={handleSubmit}>Login</button>
-
+            <br />
+            <h2 id="headingRegisterlogin">New User Register here</h2>
+            <br />
+            <button id="registerButtonlogin">
+                <Link to="/register">Register</Link>
+            </button>
         </div>
 
     );

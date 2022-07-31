@@ -5,9 +5,7 @@ import Context from "./Context/Context";
 
 
 ReactDOM.render(
-  // <Context>
     <App/>
-  // {/* </Context> */}
   ,document.getElementById("root")
 );
 
