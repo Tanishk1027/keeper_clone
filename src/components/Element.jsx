@@ -21,29 +21,16 @@ export default function Element(){
         setnotes([...notes,newNote])
     }
 
-    const fetchnotes = ()=>{
-        console.log(user);
-        const res =  axios.post("https://keeper-clone-mern.herokuapp.com/note/all",{
-                user
-            })
-            .then((response)=>{
-                console.log(response);
-            })
-            .catch(()=>{
-                console.log("Error");
-            })
-            
-            setnotes(res.data);
-    }
-
     useEffect(()=>{
-        try{
-        fetchnotes();
-        }catch(error){
-            console.log(error);
-        }  
+        const fetchnotes = async()=>{
+           const res = await axios.post("/note/all",{
+                user
+            });
+            console.log(res.data);
+            setnotes(res.data);
+        }
+        fetchnotes();  
     },[search])
-    
 
 function deleteNote(track){
     console.log(track);
