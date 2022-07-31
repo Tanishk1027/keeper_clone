@@ -5,7 +5,7 @@ import Element from './components/Element';
 import Register from './components/Register';
 import Login from './components/Login';
 import Context from "./Context/Context";
-import loginContext from './Context/Context';
+import loginContext from './Context/usecontext';
 
 
 import {
