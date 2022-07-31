@@ -13,7 +13,6 @@ import {
   Routes as Switch,
   Route
 } from "react-router-dom";
-import { useContext } from 'react';
 
 export default function App(){
 const {user} = useContext(loginContext);
