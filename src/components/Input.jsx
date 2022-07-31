@@ -2,7 +2,7 @@ import axios from "axios";
 import {useState,useContext} from "react";
 import "./input.css";
 // import notes from "../notes";
-import loginContext from "../Context/usecontext";
+import {loginContext} from "../Context/Context";
 
 
 export default function Input(props){

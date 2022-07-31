@@ -5,7 +5,7 @@ import Card from "./Card.jsx";
 import Input from "./Input";
 import { useEffect } from "react";
 import axios from "axios";
-import loginContext from "../Context/usecontext";
+import {loginContext} from "../Context/Context";
 import { useLocation } from "react-router-dom";
 
 export default function Element(){

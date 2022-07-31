@@ -4,8 +4,7 @@ import Topbar from './components/Topbar';
 import Element from './components/Element';
 import Register from './components/Register';
 import Login from './components/Login';
-import Context from "./Context/Context";
-import loginContext from './Context/usecontext';
+import Context,{loginContext} from "./Context/Context";
 
 
 import {
