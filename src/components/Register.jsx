@@ -41,7 +41,7 @@ export default function Register(){
             <h2 id="headingLoginregister">Already a user</h2>
             <br />
             <button id="loginButtonregister">
-               <Link to="/login"><Login></Login></Link>
+               <Link to="/login">Login</Link>
             </button>
         </div>
     )
