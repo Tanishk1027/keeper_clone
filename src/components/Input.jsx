@@ -16,7 +16,7 @@ export default function Input(props){
       setDesc("");
       setTitle("");
       try{
-         await axios.post("/note",{
+          axios.post("https://keeper-clone-mern.herokuapp.com/note",{
             username: user,
             title: title1,
             content: desc1

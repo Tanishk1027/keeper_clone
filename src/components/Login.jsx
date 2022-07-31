@@ -12,11 +12,11 @@ export default function Login(){
     const {user,dispatch} = useContext(loginContext);
         
     
-    const handleSubmit = ()=>{
+    const handleSubmit = async()=>{
         console.log("a");
         dispatch({type: "Login_Start"});
         try{
-             const res = axios.post("https://keeper-clone-mern.herokuapp.com/login",{
+             const res = await axios.post("https://keeper-clone-mern.herokuapp.com/login",{
                 username : userRef.current.value,
                 password
             });

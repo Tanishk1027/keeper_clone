@@ -6,7 +6,7 @@ export default function Card(props){
 const handleClick =async()=>{
     props.onDelete(props.track);
     try{
-        await axios.post("/note/delete",{
+        await axios.post("https://keeper-clone-mern.herokuapp.com/note/delete",{
             id: props.id
         });
     }catch(error){

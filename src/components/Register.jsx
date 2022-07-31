@@ -13,7 +13,7 @@ export default function Register(){
         console.log("clicked");
         e.preventDefault();
         try{
-            const res = await axios.post("/register",{
+            const res = await axios.post("https://keeper-clone-mern.herokuapp.com/register",{
                 username,
                 email,
                 password,
